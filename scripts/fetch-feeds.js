@@ -18,6 +18,7 @@ const KEYWORDS = [
   "wild food",
   "hedgerow",
   "mushroom",
+  "fungi",
   "seaweed"
 ];
 
@@ -33,6 +34,22 @@ const FEEDS = [
   {
     url: "https://publicdomainreview.org/rss.xml",
     source: "The Public Domain Review (Folklore & Culture)"
+  },
+  {
+    url: "https://www.mushroomguide.com/rss/news",
+    source: "Mushroom Guide (Mushrooms)"
+  },
+  {
+    url: "https://www.britishmyths.org.uk/feed/",
+    source: "British Myths (Folklore & Myth)"
+  },
+  {
+    url: "https://www.britmycolsoc.org.uk/rss.xml",
+    source: "British Myths (Folklore & Myth)"
+  },
+  {
+    url: "https://www.theguardian.com/uk-news/all/rss",
+    source: "The Guardian (UK News)"
   }
 ];
 
