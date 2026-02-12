@@ -44,13 +44,26 @@ const FEEDS = [
     source: "British Myths (Folklore & Myth)"
   },
   {
-    url: "https://www.britmycolsoc.org.uk/rss.xml",
-    source: "British Myths (Folklore & Myth)"
+    url: "https://www.sfs.org.uk/feed/",
+    source: "Society for Storytelling"
   },
   {
-    url: "https://www.theguardian.com/uk-news/all/rss",
-    source: "The Guardian (UK News)"
+    url: "https://archaeology.co.uk/feed",
+    source: "Current Archaeology"
+  },
+  {
+    url: "https://the-past.com/feed/",
+    source: "The Past"
+  },
+  {
+    url: "https://www.antiquarian.co.uk/feed/",
+    source: "Antiquarian"
+  },
+  {
+    url: "https://news.google.com/rss/search?q=uk+foraging+when:7d&hl=en-GB&gl=GB&ceid=GB:en",
+    source: "Foraging News"
   }
+  
 ];
 
 function normaliseText(value) {
