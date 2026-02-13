@@ -56,10 +56,6 @@ const FEEDS = [
     source: "The Past"
   },
   {
-    url: "https://www.antiquarian.co.uk/feed/",
-    source: "Antiquarian"
-  },
-  {
     url: "https://news.google.com/rss/search?q=uk+foraging+when:7d&hl=en-GB&gl=GB&ceid=GB:en",
     source: "Foraging News"
   }
@@ -80,6 +76,7 @@ function buildExcerpt(item) {
     item.contentSnippet ||
     item.summary ||
     item.content ||
+    item.description ||
     item.title ||
     "";
 
@@ -104,35 +101,28 @@ function extractDate(item) {
   return null;
 }
 
-function itemMatchesKeywords(item) {
-  const combined =
-    (item.title || "") +
-    " " +
-    (item.content || "") +
-    " " +
-    (item.summary || "") +
-    " " +
-    (item.contentSnippet || "");
+function getSearchableText(item) {
+  return [
+    item.title,
+    item.description,
+    item.content,
+    item.summary,
+    item.contentSnippet
+  ]
+    .filter(Boolean)
+    .join(" ");
+}
 
-  const text = normaliseText(combined);
+function itemMatchesKeywords(item) {
+  const text = normaliseText(getSearchableText(item));
   if (!text) return false;
   return KEYWORDS.some((kw) => text.includes(kw.toLowerCase()));
 }
 
 function extractTags(item) {
-  const combined =
-    (item.title || "") +
-    " " +
-    (item.content || "") +
-    " " +
-    (item.summary || "") +
-    " " +
-    (item.contentSnippet || "");
-
-  const text = normaliseText(combined);
+  const text = normaliseText(getSearchableText(item));
   if (!text) return [];
   const tags = KEYWORDS.filter((kw) => text.includes(kw.toLowerCase()));
-  // Deduplicate while preserving order
   return Array.from(new Set(tags));
 }
 
