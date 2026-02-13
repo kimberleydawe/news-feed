@@ -144,11 +144,51 @@ function extractImage(item) {
     return item.enclosure.url;
   }
 
+  // Check for itunes:image or media:content
+  if (item.itunes && item.itunes.image) {
+    return item.itunes.image;
+  }
+  if (item.media && item.media.content && item.media.content.url) {
+    return item.media.content.url;
+  }
+
   // Fallback: first <img> in HTML content/description
   const html = item.content || item.description || "";
   if (!html) return null;
-  const match = String(html).match(/<img[^>]+src=["']([^"']+)["']/i);
-  return match ? match[1] : null;
+  
+  // Try multiple regex patterns to catch different image formats
+  let match = String(html).match(/<img[^>]+src=["']([^"']+)["']/i);
+  if (!match) {
+    match = String(html).match(/<img[^>]+src=([^\s>]+)/i);
+  }
+  
+  if (!match) return null;
+  
+  let imageUrl = match[1];
+  
+  // Resolve relative URLs
+  if (imageUrl.startsWith("//")) {
+    imageUrl = "https:" + imageUrl;
+  } else if (imageUrl.startsWith("/") && item.link) {
+    try {
+      const baseUrl = new URL(item.link);
+      imageUrl = baseUrl.origin + imageUrl;
+    } catch (e) {
+      // If URL parsing fails, return as-is
+    }
+  } else if (!imageUrl.startsWith("http")) {
+    // Relative URL without leading slash
+    if (item.link) {
+      try {
+        const baseUrl = new URL(item.link);
+        imageUrl = new URL(imageUrl, baseUrl.origin + "/").href;
+      } catch (e) {
+        // If URL parsing fails, return as-is
+      }
+    }
+  }
+  
+  return imageUrl;
 }
 
 function itemMatchesKeywords(item) {
@@ -222,10 +262,7 @@ async function main() {
 
     let uniqueItems = Array.from(byLink.values());
 
-    // Only keep items from the last ~30 days
-    uniqueItems = uniqueItems.filter((item) => isWithinLastMonth(item.date));
-
-    // Sort newest first
+    // Sort newest first (date filter removed - show all matching articles)
     uniqueItems.sort((a, b) => {
       const aTime = a.date ? new Date(a.date).getTime() : 0;
       const bTime = b.date ? new Date(b.date).getTime() : 0;

@@ -71,6 +71,12 @@
         img.alt = item.title
           ? `Image for ${item.title}`
           : "Article image";
+        // Fallback to default image if loading fails
+        img.onerror = function () {
+          if (this.src !== DEFAULT_IMAGE) {
+            this.src = DEFAULT_IMAGE;
+          }
+        };
 
         const h2 = document.createElement("h2");
         h2.className = "card-title";
