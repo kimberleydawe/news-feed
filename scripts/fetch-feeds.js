@@ -56,10 +56,30 @@ const FEEDS = [
     source: "The Past"
   },
   {
-    url: "https://news.google.com/rss/search?q=uk+foraging+when:7d&hl=en-GB&gl=GB&ceid=GB:en",
-    source: "Foraging News"
+    url: "https://folklorethursday.com/feed",
+    source: "Folklore Thursday"
+  },
+  {
+    url: "https://news.google.com/rss/search?q=uk+folklore+when:7d&hl=en-GB&gl=GB&ceid=GB:en",
+    source: "Google Folklore News"
+  },
+  {
+    url: "https://thetravellingtalesman.wordpress.com/feed",
+    source: "The Travelling Talesman"
+  },
+  {
+    url: "https://feeds.blubrry.com/feeds/thefolklorepodcast.xml",
+    source: "The Folklore Podcast"
+  },
+  {
+    url: "https://feeds.acast.com/public/shows/6705a49ded8ff5205e0064c0",
+    source: "Wyrd Folk Podcast"
+  },
+  {
+    url: "https://historyandfolklorepodcast.libsyn.com/rss",
+    source: "History and Folklore Podcast"
   }
-  
+ 
 ];
 
 function normaliseText(value) {
