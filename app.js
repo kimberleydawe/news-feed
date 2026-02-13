@@ -1,6 +1,12 @@
 (function () {
   "use strict";
 
+  const DEFAULT_IMAGE =
+    "data:image/svg+xml;utf8," +
+    encodeURIComponent(
+      '<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#14532d"/><stop offset="1" stop-color="#0f172a"/></linearGradient></defs><rect width="64" height="64" fill="url(#g)"/><circle cx="20" cy="40" r="10" fill="#bbf7d0"/><path d="M18 36c4-8 10-14 18-16" stroke="#bbf7d0" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M32 20c2 3 3 6 3 10" stroke="#bbf7d0" stroke-width="2" fill="none" stroke-linecap="round"/></svg>'
+    );
+
   const state = {
     items: [],
     filtered: [],
@@ -58,6 +64,14 @@
         const card = document.createElement("article");
         card.className = "card";
 
+        const imageUrl = item.image || DEFAULT_IMAGE;
+        const img = document.createElement("img");
+        img.className = "card-image";
+        img.src = imageUrl;
+        img.alt = item.title
+          ? `Image for ${item.title}`
+          : "Article image";
+
         const h2 = document.createElement("h2");
         h2.className = "card-title";
         const link = document.createElement("a");
@@ -77,6 +91,7 @@
         excerpt.className = "excerpt";
         excerpt.textContent = escapeText(item.excerpt || "");
 
+        card.appendChild(img);
         card.appendChild(h2);
         card.appendChild(meta);
         card.appendChild(excerpt);

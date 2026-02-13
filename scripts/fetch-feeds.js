@@ -12,8 +12,13 @@ const KEYWORDS = [
   "myth",
   "legend",
   "faerie",
+  "ghost",
   "fairy",
   "witch",
+  "witchcraft",
+  "spell",
+  "magic",
+  "vampire",
   "foraging",
   "wild food",
   "hedgerow",
@@ -133,6 +138,19 @@ function getSearchableText(item) {
     .join(" ");
 }
 
+function extractImage(item) {
+  // Prefer enclosure URL if provided
+  if (item.enclosure && item.enclosure.url) {
+    return item.enclosure.url;
+  }
+
+  // Fallback: first <img> in HTML content/description
+  const html = item.content || item.description || "";
+  if (!html) return null;
+  const match = String(html).match(/<img[^>]+src=["']([^"']+)["']/i);
+  return match ? match[1] : null;
+}
+
 function itemMatchesKeywords(item) {
   const text = normaliseText(getSearchableText(item));
   if (!text) return false;
@@ -146,6 +164,16 @@ function extractTags(item) {
   return Array.from(new Set(tags));
 }
 
+function isWithinLastMonth(isoDate) {
+  if (!isoDate) return false;
+  const itemDate = new Date(isoDate);
+  if (Number.isNaN(itemDate.getTime())) return false;
+
+  const now = new Date();
+  const thirtyDaysAgo = new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000);
+  return itemDate >= thirtyDaysAgo;
+}
+
 async function fetchFeed(feed) {
   const feedData = await parser.parseURL(feed.url);
   const items = Array.isArray(feedData.items) ? feedData.items : [];
@@ -156,6 +184,7 @@ async function fetchFeed(feed) {
       const link = item.link || item.guid || "";
       const date = extractDate(item);
       const tags = extractTags(item);
+       const image = extractImage(item);
 
       return {
         title: item.title || "(Untitled)",
@@ -163,7 +192,8 @@ async function fetchFeed(feed) {
         date,
         source: feed.source,
         tags,
-        excerpt: buildExcerpt(item)
+        excerpt: buildExcerpt(item),
+        image: image || null
       };
     });
 }
@@ -192,7 +222,10 @@ async function main() {
 
     let uniqueItems = Array.from(byLink.values());
 
-    // Sort newest first, null dates go last
+    // Only keep items from the last ~30 days
+    uniqueItems = uniqueItems.filter((item) => isWithinLastMonth(item.date));
+
+    // Sort newest first
     uniqueItems.sort((a, b) => {
       const aTime = a.date ? new Date(a.date).getTime() : 0;
       const bTime = b.date ? new Date(b.date).getTime() : 0;
