@@ -1,6 +1,50 @@
 {
-  "generatedAt": "2026-10-29T12:39:05.594Z",
+  "generatedAt": "2026-10-30T12:30:50.776Z",
   "items": [
+    {
+      "title": "'A ghost walk with a twist' - Event explores the haunted moors that inspired Brontës - Keighley News",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNTmthY25DQmJtSEdlWUw2dy1RLXVEb3VMWllUQWxGUEx4WEx0TW5NREZaOUFTYzVGNHZoWkZ3Y2xIODBSY2JnR0lzQmNFQ0JIUHZCR0IycVJod0VVcFJ0RUwtNFJWODFmd1o4SFB4ZHpNRnEtRE9qOENUWW1fdWt2OFF4UWNSSW5NUUJfYzl6ZWlTaUpsQXltLUdB?oc=5",
+      "date": "2026-10-30T11:56:46.000Z",
+      "source": "Google Folklore News",
+      "tags": [
+        "ghost"
+      ],
+      "excerpt": "'A ghost walk with a twist' - Event explores the haunted moors that inspired Brontës Keighley News",
+      "image": null
+    },
+    {
+      "title": "A pig-headed search for Cannock’s strangest myth - https://www.birminghamdispatch.co.uk/",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPbktzcmJUNXFWUjFVMGYyQ0hYYUprNGYyQTVPOFA3VmEzTXU0TnRmY0tVc0lkZ2dyaHNVQVFuZmtSSlJ2QlRtOUl5WGRlMEJWU0VibmxXUFVOUV9XYld0MEFkaDF1X0NNUzdrZWRidGk5cWRZQS1rRjk1aHRucEU0UnJvTEFZTzBqcGhKZkVR?oc=5",
+      "date": "2026-10-30T07:04:55.000Z",
+      "source": "Google Folklore News",
+      "tags": [
+        "myth"
+      ],
+      "excerpt": "A pig-headed search for Cannock’s strangest myth https://www.birminghamdispatch.co.uk/",
+      "image": null
+    },
+    {
+      "title": "Bolton landmark steeped in folklore takes shape again after major restoration - The Bolton News",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZ0MyRlRSM1F6NmZLc0N4NzRjWXZxVWY3RWk4WWRHcU5fVl81OUVCdWVNWVRQUkZsanRyV1BOTGJTWVBRN2p2bXpBY1d4MFZRM290XzBJenk5TFpPal9hNDZHUzFVenlfbkEzRzA0UmR5QmtRbTBjV1FRZ00xTE1NVXA4Z0lyNzdXaGMzWkpGZVZ1d25kbTNyNWUzYmFNY2Nxelo0?oc=5",
+      "date": "2026-10-30T05:00:00.000Z",
+      "source": "Google Folklore News",
+      "tags": [
+        "folklore"
+      ],
+      "excerpt": "Bolton landmark steeped in folklore takes shape again after major restoration The Bolton News",
+      "image": null
+    },
+    {
+      "title": "Vanessa Santos on the Scottish folklore that inspired In Your Heart a Devil - The Cold Magazine",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNZzVkNTEtS2NrTzhicFlYaU5CUE5OeE1zeGY5aFM3aHFsUUFHc0FmUk0wUE1qc1cxYmpvaFczanJoVm5rVWlUY2JEb2RaUVVwQlNCV0VfamNhTmhxdEdCRmdlVlBzMXVubzNhZU9iY3Y3cURrRmRGM2Jzam82aDVMamxNbGdzalQ3ZUlOdW1aYw?oc=5",
+      "date": "2026-10-29T18:09:25.000Z",
+      "source": "Google Folklore News",
+      "tags": [
+        "folklore"
+      ],
+      "excerpt": "Vanessa Santos on the Scottish folklore that inspired In Your Heart a Devil The Cold Magazine",
+      "image": null
+    },
     {
       "title": "Halloween Campfire Tales",
       "link": "https://shows.acast.com/wyrdfolkpod/episodes/6ae21b504288e950ed22980f",
@@ -15,7 +59,7 @@
     {
       "title": "Not So Holy Ghost: Tour The UK’s Spookiest Churches And Sacred Sites - Religion Unplugged",
       "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNWFZDSndtVVJRaHlweV9Tak9EbW56VGVIdlY5b0VoTmc3clJIOEVLU2RfVDl0QmRFczRDUEM1ZElBaXA3MFNhc1o2ajFtY19xNGRjZVhnQjhWNEpBSlh3Y3h1cE81Y2FROU5uUXVfdS1tbUllWVNPRG85Y2VGVXNYR2lYVDc2aG41dl92bQ?oc=5",
-      "date": "2026-10-29T04:01:00.000Z",
+      "date": "2026-10-29T04:05:47.000Z",
       "source": "Google Folklore News",
       "tags": [
         "ghost"
@@ -57,17 +101,6 @@
       "image": null
     },
     {
-      "title": "Saving Saddleworth’s myths before they disappear forever - Oldham Times",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNSUsxNjNaQUVTTHRUeTJvRkkzNXNFU3ZwUUd5WTZCekhzZEYzRVdhQUZLeXppN1pQeUZMWlRSdTF0Nlk3N1JvTE9EcnR1OGtVU3daYWRBbzhoeklrQTR2NWhmMkxZMmt6M1JoOFJqVDlaRTllTlU0VUhjNU51YThEUGcwLWM0OU1CRVNpdmFacUp3ZUZpQVNBN3BYekp6eFRnSEU3R2RB?oc=5",
-      "date": "2026-10-28T05:00:00.000Z",
-      "source": "Google Folklore News",
-      "tags": [
-        "myth"
-      ],
-      "excerpt": "Saving Saddleworth’s myths before they disappear forever Oldham Times",
-      "image": null
-    },
-    {
       "title": "How nettle and mugwort become ink | Witchcraft, folklore, foraging and printmaking - Victoria and Albert Museum",
       "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBrQjVnbTNDZVdySUl2c1duY3plR0FmQndaT3d4MkY2Q2haT01oeWktalZvejZ5NWRqczRkaGI1RVJoM003Z1JDZUNLNDE4RlVlUncyUFJ6MktNYXpzb1YxLXFQUk1wRHkzaUtkOFdqZVZ0SHVXWnR0WGFjTQ?oc=5",
       "date": "2026-10-27T17:01:23.000Z",
@@ -106,17 +139,6 @@
       "image": null
     },
     {
-      "title": "Witch shares supernatural signs we've all seen and mean snow is coming - OK! Magazine",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOMVpVaXJiSF9WYlNKalowbEJkOW9mQjNWOS1hM213YmRUWXU5QW9iMUpuVVpiMnFqZHpPZ0EwTDhFS1AxVnl6WXNFY2VOMU1LOVFKdmtDdnpWS05rMjhvTmY5Ty1FM05kQWFEaDVqUk5VU3VDTTV6NDZMdmV2N3hObWpn?oc=5",
-      "date": "2026-10-27T07:00:00.000Z",
-      "source": "Google Folklore News",
-      "tags": [
-        "witch"
-      ],
-      "excerpt": "Witch shares supernatural signs we've all seen and mean snow is coming OK! Magazine",
-      "image": null
-    },
-    {
       "title": "Chronic Insanity to debut Folklore: The Trials of Robin Hood in Nottingham this January - Immersive Rumours",
       "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQQU51bDROc2Y3VFZTR1V1SGJzSkFsa2VQbm5rQks0TmIybmFPaUY1Um9wME5MSzlxTk5zM3VsdTliMmxPQXhmM3ozM0RRRzhjTlBQaE9tMVI1d0RRSW1QRGViRXVJYkJoN1R0RHlnU0RnYzhlMnV4QWo4UkxoaS1QYmFOSzdVaVk0MlU4aUZmSU84Z0dKT0gwTXdmejMyX25jZWdPajc3Mk9mUXk1UEF3dVBBSzQ5LTVTSUt0R1kwOUVVZw?oc=5",
       "date": "2026-10-27T00:15:45.000Z",
@@ -148,17 +170,6 @@
         "myth"
       ],
       "excerpt": "Thousands of Devon sailors seized but pirate raids on villages were a myth Exmouth Journal",
-      "image": null
-    },
-    {
-      "title": "New film inspired by north Belfast house set for premiere: ‘I wanted to bring that old legend of the banshee into the modern world’ - Belfast Telegraph",
-      "link": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxQUmF2REJUenRuaXRtOGNRRTFXMk03d0xpeGszQkN4MkFuUTlDdm5TTXRzbWdocTFzZ3hkMF9YTG82Z05JYXBxc01ya3lKS0xTU0ZTTWo2Z2RxV2ZkeGJGVTV6WkN0UURVakVvV3drSE9EMFRVcjVsWE95M1M1VGlUSVpmaTF5dlFlSjJjWjRIbVEwa0ZyTmlvTUdlblg2TldWLWI5VWloTVViYkMwa08tQjl0QjhBcTdFUXdFUTF4emJYV0w1U21BWm1HeXJSSUttLS1zY2VuWUtuWTd0RjlhdVRMVG5jSy1KRDFpVnZ2bUtoQ3BqR2tzcGhESXNiRDBfdnlFblJNZWdEZ01rTzE3LVRIb3AyajlUOHQ2NkU2WTlrZFN5NkpTaWJ3?oc=5",
-      "date": "2026-10-24T07:21:00.000Z",
-      "source": "Google Folklore News",
-      "tags": [
-        "legend"
-      ],
-      "excerpt": "New film inspired by north Belfast house set for premiere: ‘I wanted to bring that old legend of the banshee into the modern world’ Belfast Telegraph",
       "image": null
     },
     {
@@ -1382,17 +1393,6 @@
       ],
       "excerpt": "This week's episode is a special short non-fiction exploring the background of the legend of The Vampire of Croglin Grange. The story is a Cumbrian classic packed full of all the usual gothic tropes: ancient graveyards, helpless maidens ravished in their beds and a bloodthirsty…",
       "image": "https://sphinx.acast.com/p/open/s/6705a49ded8ff5205e0064c0/e/6742d82f8beb3051039cd43b/media.mp3"
-    },
-    {
-      "title": "Episode 165 - SIDESHOW GEEKS",
-      "link": "https://podcast.show/thefolklorepodcast/episode/138854975/",
-      "date": "2024-11-23T20:48:00.000Z",
-      "source": "The Folklore Podcast",
-      "tags": [
-        "folklore"
-      ],
-      "excerpt": "In this episode of The Folklore Podcast we enter the secretive world of the circus and the carnival sideshow - a community with much tradition and folklore but at the same time many secrets. Our guest Nathan Wakefield, himself a variety performer, uncovers the world of the Sides…",
-      "image": "https://media.blubrry.com/thefolklorepodcast/mc.blubrry.com/thefolklorepodcast/165_Sideshow_Geeks.mp3?awCollectionId=370335&awEpisodeId=11332758&aw_0_azn.pgenre=History&aw_0_1st.ri=blubrry&aw_0_azn.pcountry=GB&aw_0_azn.planguage=en-gb&cat_exclude=IAB1-8%2CIAB1-9%2CIAB7-41%2CIAB8-5%2CIAB8-18%2CIAB11-4%2CIAB23%2CIAB24%2CIAB25%2CIAB26&aw_0_cnt.rss=https%3A%2F%2Ffeeds.blubrry.com%2Ffeeds%2Fthefolklorepodcast.xml"
     }
   ]
 }
